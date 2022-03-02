@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="@string/home"
+        android:icon="@drawable/ic_menu_01" />
+
+    <item android:title="@string/categories"
+        android:icon="@drawable/ic_menu_02"
+        />
+
+    <item android:title="@string/zood_pay"
+        android:icon="@drawable/ic_menu_03"
+        />
+
+    <item android:title="@string/cart"
+        android:icon="@drawable/ic_menu_04"
+        />
+
+    <item android:title="@string/account"
+        android:icon="@drawable/ic_menu_05"
+        />
+</menu>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TestAssignment</string>
+    <string name="no_internet_msg">Please check your connection.</string>
+    <string name="home">Home</string>
+    <string name="categories">Categories</string>
+    <string name="zood_pay">Zood PAy</string>
+    <string name="cart">Cart</string>
+    <string name="account">Account</string>
+    <string name="banner">Home Banner</string>
+    <string name="recommended">Recommended</string>
+</resources>

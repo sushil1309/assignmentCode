@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="market"
+            type="com.testassignment.data.model.product.Market" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/iv_product"
+        app:imageUrl="@{market.imgUrl}"
+        />
+
+    <TextView
+        android:id="@+id/tv_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_product"
+        android:text="@{market.name}"
+        android:maxLines="2"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/opensans_regular"
+        android:textSize="12sp"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_product"
+        app:displayPrice="@{market.localPrice.toString()}"
+        android:textSize="12sp"
+        android:fontFamily="@font/opensans_bold"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price"
+        android:singleLine="true"
+        android:drawablePadding="10dp"
+        android:textColor="@color/gray"
+        android:textSize="10sp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@{market.rank.toString()}"
+        app:drawableStartCompat="@drawable/ic_star" />
+
+</androidx.constraintlayout.widget.ConstraintLayout></layout>
